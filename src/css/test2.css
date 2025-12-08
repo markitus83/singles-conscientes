@@ -1,0 +1,44 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* La altura de la pantalla */
+}
+
+.parallax-video {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centrar el video */
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Para que el video esté al fondo */
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+/* Agregar un fondo para el contenido sobre el video */
+.contenido {
+    background: #f5f5f5;
+    padding: 50px;
+}
+
+/* Añadir transiciones si se desea */
